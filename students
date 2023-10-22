@@ -1,0 +1,16 @@
+-- create
+CREATE TABLE students (
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+name TEXT NOT NULL,
+age TEXT NOT NULL,
+address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO students VALUES (NULL, 'Иван', '18', 'Москва');
+INSERT INTO students VALUES (NULL, 'Петр', '22', 'Иваново');
+INSERT INTO students VALUES (NULL, 'Анна', '35', 'Питер');
+INSERT INTO students VALUES (NULL, 'Юлия', '18', 'Москва');
+INSERT INTO students VALUES (NULL, 'Николай', '36', 'Москва');
+
+select * from students where address = 'Москва';
